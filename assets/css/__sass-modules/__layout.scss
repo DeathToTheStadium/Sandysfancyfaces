@@ -1,0 +1,118 @@
+/* Query Styles */
+[class*="col-"] {
+    width: 100%;
+    height: auto;
+    margin-right: 50px;
+  }
+
+
+/* Mobile Header */
+body{background-color: red;}
+.header{
+    padding: 10px;
+}
+.header__img{
+    background-image: url(Assets/MEDIA/Main_banner_Tablet.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:auto;
+    width: 100%;
+}
+
+/* Mobile Navigation */
+
+.navigation{
+    padding: 5px;
+}
+
+.navigation__img{
+    height: auto;
+    width: 12%;
+    
+}
+
+
+/* Mobile Article */
+
+/* Mobile Section 1 */
+
+/* Mobile Section 2 */
+
+/* Mobile Section 3 */
+
+/* Mobile Social links */
+
+/* Mobile Footer */
+
+/* Mobile Copyright */
+
+
+/* Tablets 
+   Description: this is a Template for tables 
+*/
+@media only screen and (min-width: 657px) {
+/* Tablet Header */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* Tablet Article */
+
+/* Tablet Section 1 */
+
+/* Tablet Section 2 */
+
+/* Tablet Section 3 */
+
+/* Tablet Social links */
+
+/* Tablet Footer */
+
+/* Tablet Copyright */
+}
+
+/* Computer
+   Description: this is a Template for laptop or desktop
+*/
+@media only screen and (min-width: 900px) {
+
+/* Query Styles Desktop */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* Header */
+
+
+/* Computer Navigation */
+
+/* Computer Article */
+
+/* Computer Section 1 */
+
+/* Computer Section 2 */
+
+/* Computer Section 3 */
+
+/* Computer Social links */
+
+/* Computer Footer */
+
+/* Computer Copyright */
+}
