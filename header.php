@@ -19,6 +19,16 @@
 <!--  Font-awsome-end  -->
 </head>
 <body>
+  <nav>
+    <?php wp_nav_menu( "myfirsttheme",array(
+      "menu" =>'',
+      "menu_class" =>'navbar-nav navbar',
+      "menu_id" =>'navigation',
+      "echo" => true,
+      "before"=> "<li class="."nav-item"."><a class="."nav-link"." href="."#".">",
+      "after" => "</a></li>"
+    ) ) ?>
+  </nav>
   <header class="jumbotron-grad">
     <nav class="navbar navbar-expand-sm navbar-dark stick-top">
       <a class="navbar-brand flex" href="<?php echo home_url(); ?>">
