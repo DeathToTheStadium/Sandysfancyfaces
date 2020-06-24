@@ -60,7 +60,7 @@ if( !function_exists('Enque_StyleSheet'))
 {
     function Enque_StyleSheet()
     {
-        wp_enqueue_style( 'style', get_template_directory_uri() . 'style.css',false,'1.1','all');
+        wp_enqueue_style( 'style', get_stylesheet_uri() );
     }
     
     add_action( "Enque_StyleSheet", Enque_StyleSheet() );
