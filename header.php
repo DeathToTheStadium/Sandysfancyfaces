@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>sandys fancy Faces</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="<?php get_template_directory() ?>/style.css">
 <!--  bootstrap-css  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!--  bootstrap-css-end   -->
@@ -19,8 +19,6 @@
 <!--  Font-awsome-end  -->
 </head>
 <body>
-  <nav>
-  </nav>
   <header class="jumbotron-grad">
     <nav class="navbar navbar-expand-sm navbar-dark stick-top">
       <a class="navbar-brand flex" href="<?php echo home_url(); ?>">

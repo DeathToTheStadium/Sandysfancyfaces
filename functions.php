@@ -20,13 +20,13 @@ if ( !function_exists('Dynamic_Widgets_Area'))
     {
         // Class Names
 
-        $row = "container";
+        $row = "row";
 
         register_sidebar( array(
             'name'=>esc_html__( "Section_area-1", "Sandyswebsite" ),
             'id' =>'section-1',
             'description' =>esc_html__("this is the first section in your theme", "Sandyswebsite"),
-            'before_widget' =>'<section class='.$row.'>',
+            'before_widget' =>'<section class='.$Class.'>',
             'after_widget' =>'</section',
             'before_title' =>'',
             'after_title' =>'',
@@ -36,7 +36,7 @@ if ( !function_exists('Dynamic_Widgets_Area'))
             'name'=>esc_html__( "Section_area-2", "Sandyswebsite" ),
             'id' =>'section-2',
             'description' =>esc_html__("this is the first section in your theme", "Sandyswebsite"),
-            'before_widget' =>'<section class='.$row.'>',
+            'before_widget' =>'<section class='.$Class.'>',
             'after_widget' =>'</section>',
             'before_title' =>'',
             'after_title' =>'',
