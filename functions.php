@@ -6,11 +6,9 @@ if (! function_exists('Navigation'))
 {
     function Navigation()
     {
-        register_nav_menus( array(
-            'primary'   => __( 'Primary Menu', 'myfirsttheme' ),
-            'secondary' => __( 'Secondary Menu', 'myfirsttheme' )
-        ) );
+        register_nav_menu( 'main_nav',"main-nav");
     }
+    add_action( "Navigation", Navigation());
 }
 
 

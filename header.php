@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>sandys fancy Faces</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style.css">
 <!--  bootstrap-css  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!--  bootstrap-css-end   -->
@@ -20,14 +20,6 @@
 </head>
 <body>
   <nav>
-    <?php wp_nav_menu( "myfirsttheme",array(
-      "menu" =>'',
-      "menu_class" =>'navbar-nav navbar',
-      "menu_id" =>'navigation',
-      "echo" => true,
-      "before"=> "<li class="."nav-item"."><a class="."nav-link"." href="."#".">",
-      "after" => "</a></li>"
-    ) ) ?>
   </nav>
   <header class="jumbotron-grad">
     <nav class="navbar navbar-expand-sm navbar-dark stick-top">
@@ -42,7 +34,14 @@
         </span> 
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav navbar">
+      <?php 
+    wp_nav_menu( array(
+      "menu" =>'main_nav',
+      'menu_class' => " navbar navbar-nav",
+      "Theme_location" => "main_nav"
+    ))
+    ?>
+        <!-- <ul class="navbar-nav navbar">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a> 
           </li>
@@ -58,7 +57,7 @@
           <li class="nav-item">
             <a class="nav-link btn btn-outline-primary" href="#" style="font-weight: bold;">Contact us</a> 
           </li>
-        </ul>
+        </ul> -->
       </div>
     </nav>
 
