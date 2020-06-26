@@ -15,10 +15,11 @@
             <!-- Card -->
             <div class="card hoverable">
                 <!-- Card image -->
+                <?php the_post_thumbnail( 'thumbnail' );?>
                 <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" alt="Card image cap">
                 <!-- Card content -->
                 <div class="card-body">
-                    <!-- Title -->
+                    <\!-- Title -->
                     <a href="#!" class="black-text"><?php the_title() ?></a>
                     <!-- Text -->
                     <p class="card-title text-muted font-small mt-3 mb-2"><?php the_excerpt() ?></p>
@@ -38,3 +39,4 @@
 
 
 <?php get_footer() ?>
+
